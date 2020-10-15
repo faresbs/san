@@ -1,0 +1,21 @@
+Experimentation done at: 2020-02-24-13.36 with current configurations:
+data : data/PHOENIX-2014-T
+model_path : EXPERIMENTATIONS/SLT/hybrid-ls/best_params.pt
+lookup_table : data/slt_lookup.txt
+lookup_table_gloss : data/slt_lookup_gloss.txt
+rescale : 224
+num_workers : 4
+show_sample : False
+batch_size : 1
+save : True
+save_path : EVALUATION/2020-02-24-13.36
+hand_query : False
+emb_type : 2d
+emb_network : mb2
+decoding : beam
+n_beam : 3
+decoding_length : 30
+rel_window : None
+bleu : True
+rouge : True
+seed : 1111

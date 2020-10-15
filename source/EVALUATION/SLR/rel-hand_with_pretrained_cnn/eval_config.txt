@@ -1,0 +1,21 @@
+Experimentation done at: 2020-07-02-11.29 with current configurations:
+data : data/phoenix-2014.v3/phoenix2014-release/phoenix-2014-multisigner
+model_path : EXPERIMENTATIONS/2020-06-26-11.58/best_params.pt
+lookup_table : data/slr_lookup.txt
+rescale : 224
+num_workers : 0
+show_sample : False
+batch_size : 1
+save : True
+hand_query : True
+data_stats : data_stats.pt
+hand_stats : hand_stats.pt
+emb_type : 2d
+emb_network : mb2
+decoding : greedy
+n_beam : 4
+rel_window : 5
+bleu : False
+rouge : False
+txt : None
+seed : 1111
