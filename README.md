@@ -35,7 +35,9 @@ Other dependencies (numpy, etc..).
 pip install numpy
 ```
 
-## Evaluation
+## Evaluation 
+
+
 
 ## Training
 
@@ -43,6 +45,9 @@ pip install numpy
 
 * [Pytorch](https://pytorch.org/) - ML library
 * [Opencv](https://opencv.org/) - Open Source Computer Vision Library
+
+## TO DO:
+
 
 ## Contributing
 
