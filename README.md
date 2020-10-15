@@ -1,6 +1,6 @@
 # Sign Language Recognition and Translation 
 
-This repository provides a pytorch-based implementation of Context Matters: Self-Attention for Sign Language Recognition (add arXiv link) introduced by Fares et. al.
+This repository provides a pytorch-based implementation of Context Matters: Self-Attention for Sign Language Recognition (add arXiv link).
 
 ## Getting Started
 
