@@ -1,6 +1,6 @@
 # Sign Language Recognition and Translation 
 
-This repository provides a pytorch-based implementation of Context Matters: Self-Attention for Sign Language Recognition (add arXiv link).
+This repository provides a pytorch-based implementation of Context Matters: Self-Attention for Sign Language Recognition.
 
 ## Getting Started
 
@@ -8,7 +8,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Updates
 
-This repository is currently under construction!! 
+* Paper submitted into ICPR 2020.
+  
 
 ### Prerequisites
 
@@ -35,8 +36,12 @@ Other dependencies (numpy, etc..).
 pip install numpy
 ```
 
-## Evaluation 
 
+## Architecture
+
+![Test Image 1](https://github.com/faresbs/slrt/blob/master/images/arch.png)
+
+## Evaluation 
 
 
 ## Training
@@ -48,14 +53,31 @@ pip install numpy
 
 ## TO DO:
 
+## Results
+
+### Quantitative Analysis
+
+
+### Qualitative Analysis
+
+
+## Datasets
+
+### Sign language recognition
+
+### Sign language translation
+
 
 ## Contributing
 
-You are free to use this project or contribute that would be cool.
+You are free to use this project or contribute that would be cool. Please contact me if you face any problems running the code or if you require any clarification.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Authors
+
 
 ## Acknowledgments
 
