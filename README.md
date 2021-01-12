@@ -39,7 +39,7 @@ pip install numpy
 
 ## Architecture
 
-<img src="https://github.com/faresbs/slrt/blob/master/images/arch.png" data-canonical-src="https://github.com/faresbs/slrt/blob/master/images/arch.png" width="200" height="400" />
+<img src="https://github.com/faresbs/slrt/blob/master/images/arch.png" data-canonical-src="https://github.com/faresbs/slrt/blob/master/images/arch.png" width="800" height="600" />
 
 ## Evaluation 
 
