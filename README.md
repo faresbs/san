@@ -79,12 +79,14 @@ python train_slt.py
 ## Results
 
 ### Quantitative Analysis
-
-<img align="center" src="https://github.com/faresbs/slrt/blob/master/images/table.png" width="400" height="350" />
+<p align="center">
+<img align="center" src="https://github.com/faresbs/slrt/blob/master/images/table.png" width="400" height="350">
+</p>
 
 ### Qualitative Analysis
-
-<img align="center" src="https://github.com/faresbs/slrt/blob/master/images/heatmap.PNG" width="800" height="400" />
+<p align="center">
+<img align="center" src="https://github.com/faresbs/slrt/blob/master/images/heatmap.PNG" width="800" height="400" >
+</p>
 
 ## Datasets
 
