@@ -74,8 +74,6 @@ python train_slt.py
 * [Pytorch](https://pytorch.org/) - ML library
 * [Opencv](https://opencv.org/) - Open Source Computer Vision Library
 
-## TO DO:
-
 ## Results
 
 ### Quantitative Analysis
@@ -111,7 +109,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 * Please check the Github repo (https://github.com/neccam/SubUNets) for the implementation of "SubUNets: End-to-end Hand Shape and Continuous Sign Language Recognition" (ICCV'17).
-* 
+* Transformer implementation inspired from http://nlp.seas.harvard.edu/2018/04/03/attention.html.
 
 
 
