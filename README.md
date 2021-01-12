@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Ofcourse, you need to have python, here we are using python 3.6. So you need to install python3.
+Of course, you need to have python, here we are using python 3.6. So you need to install python3.
 
 ```
 sudo apt-get update
@@ -42,9 +42,30 @@ pip install numpy
 <img src="https://github.com/faresbs/slrt/blob/master/images/arch.png" width="800" height="600" />
 
 ## Evaluation 
+To train the Transformer model for SLR (Sign Language Recognition)
+```
+python evalaute_slr.py
+```
+To train the Transformer model for SLT (Sign Language Translation)
+```
+python evalaute_slr.py
+```
 
+### Text simplification
+After generating the prediction/translation output texts for the whole text, you can use the above script to remove the unwanted tokens like stop words (This will improve recognition performance).
+```
+./simplify.sh <path of the generated texts>
+```
 
 ## Training
+To train the Transformer model for SLR (Sign Language Recognition)
+```
+python train_slr.py
+```
+To train the Transformer model for SLT (Sign Language Translation)
+```
+python train_slt.py
+```
 
 ## Built With
 
@@ -61,14 +82,15 @@ pip install numpy
 
 ### Qualitative Analysis
 
-<img src="https://github.com/faresbs/slrt/blob/master/images/heatmap.png width="800" height="600" />
+<img src="https://github.com/faresbs/slrt/blob/master/images/heatmap.png" width="800" height="600" />
 
 ## Datasets
 
-### Sign language recognition
+### RWTH-PHOENIX-Weather 2014: Continuous Sign Language Recognition Dataset
+https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/
 
-### Sign language translation
-
+### RWTH-PHOENIX-Weather 2014 T: Parallel Corpus of Sign Language Video, Gloss and Translation
+https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX-2014-T/
 
 ## Contributing
 
@@ -80,9 +102,12 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Authors
 
+* **Fares Ben Slimane** - *Grad Student (UQAM)* - [check my personal webpage](http://faresbs.github.io)
+* **Mohamed Bouguessa** - *Professor (UQAM)*
 
 ## Acknowledgments
-
+* Please check the Github repo (https://github.com/neccam/SubUNets) for the implementation of "SubUNets: End-to-end Hand Shape and Continuous Sign Language Recognition" (ICCV'17).
+* 
 
 
 
