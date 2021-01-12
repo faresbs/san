@@ -57,9 +57,11 @@ pip install numpy
 
 ### Quantitative Analysis
 
+![Test Image 2](https://github.com/faresbs/slrt/blob/master/images/table.png)
 
 ### Qualitative Analysis
 
+![Test Image 3](https://github.com/faresbs/slrt/blob/master/images/heatmap.png)
 
 ## Datasets
 
