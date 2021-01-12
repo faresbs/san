@@ -82,7 +82,7 @@ python train_slt.py
 
 ### Qualitative Analysis
 
-<img src="https://github.com/faresbs/slrt/blob/master/images/heatmap.PNG" width="800" height="600" />
+<img src="https://github.com/faresbs/slrt/blob/master/images/heatmap.PNG" width="800" height="500" />
 
 ## Datasets
 
