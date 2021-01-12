@@ -39,7 +39,8 @@ pip install numpy
 
 ## Architecture
 
-<img align="center" src="https://github.com/faresbs/slrt/blob/master/images/arch.png" width="800" height="600" />
+<p align="center" <img src="https://github.com/faresbs/slrt/blob/master/images/arch.png" width="800" height="500" /> 
+</p>
 
 ## Evaluation 
 To train the Transformer model for SLR (Sign Language Recognition)
