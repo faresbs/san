@@ -39,7 +39,7 @@ pip install numpy
 
 ## Architecture
 
-![Test Image 1](https://github.com/faresbs/slrt/blob/master/images/arch.png)
+![Test Image 1](https://github.com/faresbs/slrt/blob/master/images/arch.png | width=100)
 
 ## Evaluation 
 
@@ -57,11 +57,11 @@ pip install numpy
 
 ### Quantitative Analysis
 
-![Test Image 2](https://github.com/faresbs/slrt/blob/master/images/table.png)
+![Test Image 2](https://github.com/faresbs/slrt/blob/master/images/table.png | width=100)
 
 ### Qualitative Analysis
 
-![Test Image 3](https://github.com/faresbs/slrt/blob/master/images/heatmap.png)
+![Test Image 3](https://github.com/faresbs/slrt/blob/master/images/heatmap.png | width=100)
 
 ## Datasets
 
