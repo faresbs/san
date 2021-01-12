@@ -78,7 +78,7 @@ python train_slt.py
 
 ### Quantitative Analysis
 
-<img src="https://github.com/faresbs/slrt/blob/master/images/table.png" width="400" height="400" />
+<img src="https://github.com/faresbs/slrt/blob/master/images/table.png" width="400" height="350" />
 
 ### Qualitative Analysis
 
