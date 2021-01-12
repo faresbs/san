@@ -39,7 +39,7 @@ pip install numpy
 
 ## Architecture
 
-<img src="https://github.com/faresbs/slrt/blob/master/images/arch.png" width="800" height="600" />
+<img align="center" src="https://github.com/faresbs/slrt/blob/master/images/arch.png" width="800" height="600" />
 
 ## Evaluation 
 To train the Transformer model for SLR (Sign Language Recognition)
@@ -78,11 +78,11 @@ python train_slt.py
 
 ### Quantitative Analysis
 
-<img src="https://github.com/faresbs/slrt/blob/master/images/table.png" width="400" height="350" />
+<img align="center" src="https://github.com/faresbs/slrt/blob/master/images/table.png" width="400" height="350" />
 
 ### Qualitative Analysis
 
-<img src="https://github.com/faresbs/slrt/blob/master/images/heatmap.PNG" width="800" height="500" />
+<img align="center" src="https://github.com/faresbs/slrt/blob/master/images/heatmap.PNG" width="800" height="400" />
 
 ## Datasets
 
