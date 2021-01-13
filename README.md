@@ -101,7 +101,7 @@ You are free to use this project or contribute that would be cool. Please contac
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Authors
 
