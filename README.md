@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Updates
 
-* Paper submitted into ICPR 2020.
+* Paper published in ICPR 2020.
   
 
 ### Prerequisites
@@ -50,7 +50,7 @@ python evalaute_slr.py
 ```
 To train the Transformer model for SLT (Sign Language Translation)
 ```
-python evalaute_slr.py
+python evalaute_slt.py
 ```
 
 ### Text simplification
@@ -78,7 +78,7 @@ python train_slt.py
 
 ### Quantitative Analysis
 <p align="center">
-<img align="center" src="https://github.com/faresbs/slrt/blob/master/images/table.png" width="400" height="350">
+<img align="center" src="https://github.com/faresbs/slrt/blob/master/images/table.png" width="400" height="300">
 </p>
 
 ### Qualitative Analysis
