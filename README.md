@@ -1,4 +1,4 @@
-# Sign Language Recognition and Translation 
+# Sign Attention Network
 
 This repository provides a pytorch-based implementation of Context Matters: Self-Attention for Sign Language Recognition. Please Note that in the paper we considered using only the Sign Language Recognition part.
 
