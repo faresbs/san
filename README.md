@@ -45,11 +45,11 @@ pip install numpy
 </p>
 
 ## Evaluation 
-To train the Transformer model for SLR (Sign Language Recognition)
+To evaluate the SAN model for SLR (Sign Language Recognition)
 ```
 python evalaute_slr.py
 ```
-To train the Transformer model for SLT (Sign Language Translation)
+To evaluate the SAN model for SLT (Sign Language Translation)
 ```
 python evalaute_slt.py
 ```
@@ -61,11 +61,11 @@ After generating the prediction/translation output texts for the whole text, you
 ```
 
 ## Training
-To train the Transformer model for SLR (Sign Language Recognition)
+To train the SAN model for SLR (Sign Language Recognition)
 ```
 python train_slr.py
 ```
-To train the Transformer model for SLT (Sign Language Translation)
+To train the SAN model for SLT (Sign Language Translation)
 ```
 python train_slt.py
 ```
