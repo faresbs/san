@@ -9,6 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 ## Updates
 
 * Paper published in ICPR 2020.
+* Paper Arxiv link: https://arxiv.org/abs/2101.04632
   
 
 ### Prerequisites
