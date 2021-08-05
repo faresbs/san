@@ -8,6 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Updates
 
+* (NEW) I am well aware of the code errors and the missing files problems. Hopefully by the next few weeks, i will get to clean and fix the code. Thank you for your understanding.
 * Paper published in ICPR 2020.
 * Paper Arxiv link: https://arxiv.org/abs/2101.04632
   
