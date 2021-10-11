@@ -31,7 +31,7 @@ from torchsummary import summary
 from viz import learning_curve_slr
 
 #Visualize GPU resources
-import GPUtil
+#import GPUtil
 
 #Lavenghtein distance (WER)
 from jiwer import wer
@@ -141,9 +141,6 @@ parser.add_argument('--evaluate', action='store_true',
 
 parser.add_argument('--resume', action='store_true',
                     help="Resume training from a checkpoint.")
-
-parser.add_argument('--pretrained_wassim', type=str, default=None,
-                    help="Load the whole pretrained model.")
                     
 parser.add_argument('--checkpoint',type=str, default=None,
                     help="resume training from a previous checkpoint.")
@@ -425,6 +422,7 @@ else:
 #Train on rgb/grayscale images
 if(args.image_type == 'rgb'):
     channels = 3
+#Not supported yet
 elif(args.image_type == 'grayscale'):
     channels = 1
 else:
@@ -496,13 +494,8 @@ print('vocabulary size:' + str(vocab_size))
 
 #-----------------------------------------------------------------------------------------------------------------
 
-#To fix : pretrained when passed to true
-print(args.pretrained_wassim)
-if(args.pretrained_wassim):
-    model = torch.load(args.pretrained_wassim, map_location=device)
-else :
-    #Load the whole model
-    model = TRANSFORMER(tgt_vocab=vocab_size, n_stacks=args.num_layers, n_units=args.hidden_size,
+#Load the whole model
+model = TRANSFORMER(tgt_vocab=vocab_size, n_stacks=args.num_layers, n_units=args.hidden_size,
                             n_heads=args.n_heads, d_ff=2048, dropout=1.-args.dp_keep_prob, image_size=args.rescale, pretrained=args.pretrained,
                             emb_type=args.emb_type, emb_network=args.emb_network,
                             full_pretrained=args.full_pretrained, hand_pretrained=args.hand_pretrained, freeze_cnn=args.freeze_cnn, channels=channels)
@@ -543,8 +536,8 @@ else:
         quit(0)
 
 
-print("Loading to GPUs")
-print(GPUtil.showUtilization())
+#print("Loading to GPUs")
+#print(GPUtil.showUtilization())
 
 train_ppls = []
 train_losses = []

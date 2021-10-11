@@ -70,7 +70,7 @@ data_path = 'data/phoenix-2014.v3/phoenix2014-release/phoenix-2014-multisigner/f
 
 #Loop over the dataset to measure mean and std
 #NOTE: this will probably take a while (run just one time!)
-mean, std = get_statistics(data_path)
+#mean, std = get_statistics(data_path)
 
 ##SLT
 #mean = torch.tensor([0.5066, 0.3351, 0.1024])
@@ -88,6 +88,8 @@ mean, std = get_statistics(data_path)
 #Image mean: tensor([0.3843, 0.3587, 0.3459])
 #Image std: tensor([0.3285, 0.3154, 0.3291])
 
+mean= torch.tensor([0.5876, 0.5686, 0.5651])
+std = torch.tensor([0.3348, 0.3421, 0.3627])
 
 print("Image mean: "+str(mean))
 print("Image std: "+str(std))

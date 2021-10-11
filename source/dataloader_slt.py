@@ -242,14 +242,13 @@ def loader(csv_file, root_dir, lookup, lookup_gloss, rescale, augmentation, batc
             transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
             transforms.Resize((rescale, rescale)),
             transforms.ToTensor()])
-            #transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
     else:
         trans = transforms.Compose([
-            SubtractMeans(mean_path, rescale),
             transforms.ToPILImage(),
             transforms.Resize((rescale, rescale)),
             transforms.ToTensor()])
-            #transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
 
     #Apply data augmentation to avoid overfitting
     transformed_dataset = PhoenixDataset(csv_file=csv_file,

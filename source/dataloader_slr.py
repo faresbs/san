@@ -228,28 +228,36 @@ def loader(csv_file, root_dir, lookup, rescale, augmentation, batch_size, num_wo
                 transforms.RandomAffine(10),
                 transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
                 transforms.Resize((rescale, rescale)),
-                transforms.Grayscale(num_output_channels=1),
-                transforms.ToTensor()])
-                #transforms.Normalize(mean=data_stats['mean'], std=data_stats['std'])])
+                transforms.ToTensor(),
+                transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
         else:
             trans = transforms.Compose([
-                SubtractMeans(mean_path, rescale),
                 transforms.ToPILImage(),
                 transforms.RandomAffine(10),
                 transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
                 transforms.Resize((rescale, rescale)),
-                transforms.ToTensor()])
+                transforms.ToTensor(),
+                #Imagenet std and mean
+                transforms.Normalize(mean=data_stats['mean'], std=data_stats['std'])])
 
-
-        hand_trans = transforms.Compose([
-                transforms.ToPILImage(),
-                transforms.RandomAffine(10),
-                transforms.Resize((112, 112)),
-                transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
-                transforms.Grayscale(num_output_channels=1),
-                transforms.ToTensor()
-                #transforms.Normalize(mean=hand_stats['mean'], std=hand_stats['std'])
-                ])
+        if(hand_stats):
+            hand_trans = transforms.Compose([
+                    transforms.ToPILImage(),
+                    transforms.RandomAffine(10),
+                    transforms.Resize((112, 112)),
+                    transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
+                    transforms.ToTensor(),
+                    transforms.Normalize(mean=hand_stats['mean'], std=hand_stats['std'])
+                    ])
+        else:
+            hand_trans = transforms.Compose([
+                    transforms.ToPILImage(),
+                    transforms.RandomAffine(10),
+                    transforms.Resize((112, 112)),
+                    transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
+                    transforms.ToTensor(),
+                    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
+                
 
     else:
 
@@ -263,18 +271,25 @@ def loader(csv_file, root_dir, lookup, rescale, augmentation, batch_size, num_wo
 
         else:
              trans = transforms.Compose([
-                SubtractMeans(mean_path, rescale),
                 transforms.ToPILImage(),
                 transforms.Resize((rescale, rescale)),
-                transforms.ToTensor()])
-
-
-        hand_trans = transforms.Compose([
-                transforms.ToPILImage(),
-                transforms.Resize((112, 112)),
                 transforms.ToTensor(),
-                transforms.Normalize(mean=hand_stats['mean'], std=hand_stats['std'])
-                ])
+                transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
+
+        if(hand_stats):
+            hand_trans = transforms.Compose([
+                    transforms.ToPILImage(),
+                    transforms.Resize((112, 112)),
+                    transforms.ToTensor(),
+                    transforms.Normalize(mean=hand_stats['mean'], std=hand_stats['std'])
+                    ])
+        else:
+            hand_trans = transforms.Compose([
+                    transforms.ToPILImage(),
+                    transforms.Resize((112, 112)),
+                    transforms.ToTensor(),
+                    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+                    ])
 
     ##Iterate through the dataset and apply data transformation on the fly
 
