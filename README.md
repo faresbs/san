@@ -62,6 +62,10 @@ After generating the prediction/translation output texts for the whole text, you
 ```
 
 ## Training
+(Optional)You can use dataset_stats to collect stats (std / mean) to better normalize your images.
+```
+python dataset_stats.py
+```
 To train the SAN model for SLR (Sign Language Recognition)
 ```
 python train_slr.py
