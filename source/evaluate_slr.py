@@ -1,5 +1,5 @@
 #######################################################
-#This script is for evaluating for the task of SLT    #
+#This script is for evaluating for the task of SLR    #
 #######################################################
 
 
@@ -18,9 +18,8 @@ import _pickle as pickle
 from collections import OrderedDict
 import cv2
 
-from transformer_slr_wassim import make_model as TRANSFORMER
-
-from dataloader_slr_wassim import loader #For SLR
+from transformer_slr import make_model as TRANSFORMER
+from dataloader_slr import loader #For SLR
 from utils import path_data, Batch, greedy_decode
 
 #Progress bar to visualize training progress
@@ -272,13 +271,13 @@ else:
 
 
 #Load the whole model with state dict
-#model = TRANSFORMER(tgt_vocab=vocab_size, n_stacks=2, n_units=1280,
-#                            n_heads=10, d_ff=2048, dropout=0.3, image_size=224,
-#                                                        emb_type='2d', emb_network='mb2')
-#model.load_state_dict(torch.load(args.model_path)['state_dict'])
+model = TRANSFORMER(tgt_vocab=vocab_size, n_stacks=2, n_units=1280,
+                            n_heads=10, d_ff=2048, dropout=0.3, image_size=224,
+                                                       emb_type='2d', emb_network='mb2')
+model.load_state_dict(torch.load(args.model_path)['state_dict'])
 
 #Load entire model w/ weights
-model = torch.load(args.model_path, map_location=device)
+#model = torch.load(args.model_path, map_location=device)
 
 model = model.to(device)
 print("Model successfully loaded")

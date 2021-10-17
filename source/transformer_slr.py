@@ -394,7 +394,7 @@ class FullTransformer(nn.Module):
 
 #Create the full model
 def make_model(tgt_vocab, n_stacks=3, n_units=512, n_heads=2, d_ff=2048, dropout=0.3, image_size=224, pretrained=True, emb_type='2d', emb_network='mb2', full_pretrained=None, hand_pretrained=None, freeze_cnn=False, channels=3):
-    print(pretrained)
+
     c = copy.deepcopy
     attn = MultiHeadedAttention(n_heads, n_units, dropout)
     ff = PositionWise(n_units, d_ff, dropout)
